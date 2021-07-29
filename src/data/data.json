@@ -1,0 +1,10 @@
+{
+"name": "Adam Young",
+"credentials": {
+  "host": "dev.euro-wall.net",
+  "port": "21",
+  "type": "FTP",
+  "username": "adamy@dev.euro-wall.net",
+  "password": "eurowall2020!"
+}
+}

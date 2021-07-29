@@ -1,22 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from "react";
+import { Col, Container, Row } from 'react-bootstrap';
+import LoginInfo from "./components/LoginInfo";
+import data from './data/data.json';
 
 function App() {
+  const [state, setstate] = useState(data) // Please Type your name is here
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <Container>
+        <Row>
+          <Col md="4">
+            <h1>Hello {state.name}</h1>
+          </Col>
+          <LoginInfo credentials={data.credentials}/>
+        </Row>
+      </Container>
       </header>
     </div>
   );
