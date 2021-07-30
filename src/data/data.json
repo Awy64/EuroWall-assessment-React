@@ -1,0 +1,28 @@
+{
+"name": "Adam Young",
+"credentials": {
+  "host": "dev.euro-wall.net",
+  "port": "21",
+  "type": "FTP",
+  "username": "adamy@dev.euro-wall.net",
+  "password": "eurowall2020!"
+},
+"data": {
+  "load_status":"",
+  "tagLookup":{
+      "CS":"Coffee Scooper",
+      "FP":"Freedom Prophet",
+      "WK":"Weak Kremlin",
+      "DT":"Diagonal Triangle"
+  },
+  "myWidgets":[
+      {"label":"Widget One","price":4278.33,"length":955.25,"tags":["CS","FP"]},
+      {"label":"Widget Two","price":776.89,"length":235.75,"tags":["DT","WK","FP"]},
+      {"label":"Widget Three","price":439,"length":99,"tags":["CS"]},
+      {"label":"Widget Four","price":3680.23,"length":455,"tags":["WK","FP"]}
+  ],
+  "filter_length":100
+  
+
+}
+}
