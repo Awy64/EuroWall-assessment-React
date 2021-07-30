@@ -8,7 +8,13 @@ import Greeting from "./components/Greeting";
 import Assessment1Function from "./components/Assessment1Function";
 
 function App() {
-  const [state, setstate] = useState(data) // Please Type your name is here
+  const [state, setState] = useState(data) // Please Type your name is here
+
+  const handleChange = e => {
+    setState({...state, data: {
+      ...state.data, filter_length: e.target.value
+    }})
+  }
   return (
     <div className="App">
       <dev className="App-header">
@@ -25,7 +31,7 @@ function App() {
                 
         </div>
         <div class="col-md-6">
-            <Assessment1Function myWidgets={state.data.myWidgets} tagLookup={state.data.tagLookup}/>
+            <Assessment1Function myWidgets={state.data.myWidgets} tagLookup={state.data.tagLookup} length={state.data.filter_length} handleChange={handleChange}/>
         </div>
         </Row>
       </Container>
