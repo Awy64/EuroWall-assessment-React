@@ -4,7 +4,7 @@ import CardHeader from 'react-bootstrap/esm/CardHeader'
 
 const LoginInfo = ({credentials}) => {
   return (
-    <Col md="4">
+    <Col md="6">
       <Card>
         <CardHeader>
           <h3>Login Information</h3>
