@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Badge } from 'react-bootstrap'
 
 const Assessment1Function = ({myWidgets, tagLookup, length, handleChange}) => {
